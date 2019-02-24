@@ -13,7 +13,7 @@ header {
 
 #Name {
     height: 50px;
-    font-size: 40px;
+    font-size: 4vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     float: left;
@@ -23,19 +23,16 @@ header {
     border-block-end-color: #444444 10px;
 }
 
-.container{
+.container {
     display: block;
     z-index: 1000;
     background: #ffffff;
-    height: 475px;
-    width: 800px;
-    margin: 30px 0px 60px 250px;
+    margin: 30px 250px 60px 250px;
     padding: 20px;
 }
 
 nav {
     float: left;
-    margin-left: 300px;
     height: 40px;
 
 }
@@ -72,3 +69,60 @@ p {
     font-size: 10px;
     border-top: 8px solid #4aaaa5;
 }
+
+#message {
+    height: 75px;
+    width: 250px;
+}
+
+#gallery {
+    float: left;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.img1 {
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 980px) {
+
+
+    header {
+        position: static;
+    }
+
+    button {
+        float: right;
+    }
+
+    #Name {
+        margin-left: 150px
+    }
+
+    .container {
+        margin: auto;
+    }
+  
+  
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #Name {
+
+        margin-left: 100px;
+    }
+   
+
+  }
+
+  @media screen and (max-with: 640px) {
+
+    #Name {
+        margin-left: 10px;
+    }
+
+
+  }
