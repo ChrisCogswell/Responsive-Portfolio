@@ -220,6 +220,8 @@ input[type=submit] {
   nav {
     float: none;
     width: 100%;
+    margin-top: 0px;
+
   }
   #logo {
     float: left;
@@ -228,8 +230,11 @@ input[type=submit] {
     position: absolute;
   }
   .main-section {
-    max-width: 60%;
+    max-width: 940px;
     margin-left: 40px;
+  }
+  img {
+    float: left;
   }
 }
 
@@ -241,7 +246,11 @@ input[type=submit] {
   #masthead {
     position: absolute;
   }
+  .main-section {
+    max-width: 728px;
+  }
 }
+
 
 @media screen and (max-width: 640px) {
   nav {
@@ -271,9 +280,11 @@ input[type=submit] {
   .main-section {
     margin: auto;
     max-width: 95%;
+    max-height: 75%;
   }
   h1 {
     font-size: 25px;
+    text-align: center;
   
   }
     
