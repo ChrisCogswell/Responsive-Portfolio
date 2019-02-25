@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  position: absolute;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -214,4 +214,67 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    float: none;
+    width: 100%;
+  }
+  #logo {
+    float: left;
+  }
+  #masthead {
+    position: absolute;
+  }
+  .main-section {
+    max-width: 60%;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    float: none;
+    width: 100%;
+  }
+  #masthead {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    clear: both;
+    width: 100%;
+    text-align: center;
+  }
+  #masthead {
+    position: absolute;
+  }
+  #logo {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .auth-image {
+    clear: both;
+    width: 100%;
+  }
+  p {
+    clear: both;
+  }
+  a {
+    font-size: 15px;
+  }
+  .main-section {
+    margin: auto;
+    max-width: 95%;
+  }
+  h1 {
+    font-size: 25px;
+  
+  }
+    
 }
